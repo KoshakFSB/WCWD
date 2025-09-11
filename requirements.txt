@@ -1,0 +1,5 @@
+aiogram==3.0.0b7
+aiohttp==3.9.1
+python-dotenv==1.0.0
+phonenumbers==8.13.22
+psutil==5.9.6

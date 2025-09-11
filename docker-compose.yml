@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: telegram_bot
+    restart: unless-stopped
+    volumes:
+      - bot_data:/data
+    env_file:
+      - .env
+    environment:
+      - TZ=Europe/Moscow
+
+volumes:
+  bot_data:
